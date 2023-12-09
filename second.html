@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>Ideal Marbles & Granites</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head1 {
+    font-family: 'agbalumo';
+    text-align: center;
+    color: red;
+    padding: 25px 85px;
+     margin:auto; 
+}
+
+header {
+    background: burlywood;
+    box-shadow: 0 5px 10px rgb(68, 65, 65);
+    padding: 5px 0;
+    /* height:50px; */
+}
+
+header .navbar {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin:5px;
+}
+
+.logo1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+
+} 
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    /* margin-left: 100px; */
+    align-items: center;
+}
+
+header .navbar>ul>li>a {
+    font-size: 18px;
+    padding: 10px 22px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.navbar ul li img {
+
+    width: 50px;
+    height: 40px;
+    border-radius: 130px;
+}
+
+.navbar ul li img:hover {
+    color: burlywood;
+    background: 2px solid #fff;
+}
+
+
+ul {
+    list-style: none;
+    background: burlywood;
+}
+
+ul li {
+    position: relative;
+}
+
+ul.dropdown li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+ul li .dropdown li {
+    text-align: center;
+}
+
+ul li .dropdown li:first-child {
+    margin-bottom: 20px;
+}
+
+ul li .dropdown {
+    padding: 10px 0px;
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 74px;
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
+
+
+
+
+
+.main-container {
+    display: flex;
+    max-width: 1280px;
+    justify-content: space-around;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.container1 {}
+
+.container2 {}
+
+.container3 {}
+
+.container4{}
+
+.container5 {}
+
+.container6 {}
+
+.container7{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+
+.container1 img,
+.container2 img,
+.container3 img,
+.container4 img,
+.container5 img,
+.container6 img ,
+.container7 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.container6 h3,.container7 h3,
+.container5 h3,.container4 h3,
+.container3 h3,.container2 h3,.container1 h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.container1 img,
+.container2 img,
+.container3 img,
+.container4 img,
+.container5 img,
+.container6 img,
+.container7 img
+{
+        transition: all .2s ease-out;
+    }
+.container2 img:hover{
+        transform: scale(1.15);
+    }
+    .container3 img:hover{
+        transform: scale(1.15);
+    }
+    .container4 img:hover{
+        transform: scale(1.15);
+    }
+
+
+    .container5 img:hover{
+        transform: scale(1.15);
+    }
+
+    .container6 img:hover{
+        transform: scale(1.15);
+    }
+    .container1 img:hover{
+        transform: scale(1.15);
+    }
+
+    .container7 img:hover{
+        transform: scale(1.15);
+    }
+
+.types {
+    text-align: center;
+}
+.container0{
+    display: flex;
+    background: url('https://www.homelane.com/blog/wp-content/uploads/2021/05/marble-vs-tiles.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+h2 {
+    color: #242020;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hori {
+    margin: 5px 170px;
+}
+
+footer {
+    padding: 20px 0;
+    margin: 40px auto 0 auto;
+    background: rgb(216, 36, 60);
+    color: bisque;
+}
+
+.footer-container {
+    justify-content: space-evenly;
+}
+
+.homepage {
+    margin-top: 30px;
+}
+
+.homepage a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.homepage h1 {
+    font-size: 18px;
+}
+
+.homepage p {
+    margin-top: 10px;
+}
+
+
+.footer-container a {
+    color: bisque;
+}
+
+.footer-container a:hover {
+    color: rgb(147, 224, 22);
+}
+
+.footer-container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.footer-container {}
+.head2 {
+    margin: 40px auto;
+    max-width: 650px;
+    text-align: center;
+    padding-bottom: 5px;
+    color: red;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid black;
+    /* margin-top: 30px; */
+}
+
+.head3 {
+    font-size: 24px;
+    border: none;
+    margin: 30px auto;
+}
+html{
+scroll-behavior: smooth;
+}
+
+/* The responsiveness of header goes here */
+@media (max-width:1080px) {
+    header .navbar {
+   /* max-width: 1190px; */
+   padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+
+
+}
+@media (max-width:938px) {
+    header .navbar {
+   /* max-width: 1190px; */
+   padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+header{
+    margin:auto;
+}
+
+}
+@media (max-width:1200px) {
+    header .navbar {
+   /* max-width: 1190px; */
+   padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+    header{
+    margin:auto;
+}
+
+}
+
+@media (max-width:1030px) {
+    header .navbar ul {
+        margin-left: 0px;
+    }
+    header{
+    margin:auto;
+}
+}
+
+@media (max-width: 970px) {}
+
+
+@media (max-width:930px) {
+    header .navbar {
+        padding: 0 10px;
+    }
+/* .container0{
+    max-width: 600px;
+} */
+    .logo1 {
+        padding: 0;
+    }
+
+    header .navbar ul {
+        margin-left: 10px;
+    }
+
+    header .navbar ul li a {
+        padding: 10px;
+    }
+    header{
+    margin:auto;
+}
+}
+@media (max-width:930px){
+    header{
+    margin:auto;
+}
+
+    .detail {
+    max-width: 600px;
+}
+
+.footer-container {}
+}
+@media (max-width:680px) {
+    .head2 {
+        max-width: 450px;
+    }
+
+    .hori {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    header{
+    margin:auto;
+}
+}
+
+@media (max-width:740px) {
+    header .navbar {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+    header{
+    margin:auto;
+}
+
+    .logo1 {}
+
+    header .navbar ul {
+        flex-wrap: wrap;
+        gap: 15px 10px;
+        justify-content: center;
+    }
+}
+@media (max-width:480px) {
+    .head1 {
+        font-size: 25px;
+    }
+    header{
+    margin:auto;
+}
+    
+    .head2 {
+        max-width: 320px;
+    }
+ 
+    .footer-container {
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage {
+        text-align: center;
+    }
+    .head2,
+    .head3 {
+        margin: auto 20px;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    border-radius: 10px;
+    max-height: 80px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal.active .modal-content {
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+#imageModal img{
+width:550px;
+height: 450px;
+}
+@media screen and (max-width: 600px) {
+            .modal-content {
+               max-width: 70%;
+            }
+
+            #imageModal img{
+                max-width: 50;
+                max-height: 70%;
+                margin-top: 37px;
+            }
+
+            header{
+    margin:auto;
+}
+
+        }
+        .container20{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container20">
+        <div head="first">
+            <logo class="logo1">
+              <a href="index.html">  <img src="logo.jpg"></a>
+            </logo>
+        </div>
+            <div head="first1">
+        <h1 class="head1"> IDEAL &nbsp;MARBLES &nbsp; & &nbsp; GRANITES </h1>
+       
+    </div>
+        </div>
+    <header>
+        <nav class="navbar">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seven.html"> Marbles</a></li>
+                    <li><a href="#head">Granites</a> </li> 
+                    <li><a href="third.html">Borders</a></li>
+                     <li><a href="fourth.html">Stairs</a></li>
+                <li><a href="fourth.html">Floors</a></li>
+                <li><a href="sixth.html">Mosaics</a></li>
+                <li><a href="third.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        <div class="container0">
+ </div>
+        <br>
+        <br>
+        <h2 class="head2 head3" id="head">  Granites</h2>
+        <hr class="hori">
+        <div class="main-container container1" >
+            <div class="types" id="types1">
+                <img src="https://img2.exportersindia.com/product_images/bc-full/2019/7/6432195/black-galaxy-granite-tile-1564475933-5022444.jpeg" alt="Image 1" onclick="showImage('https://img2.exportersindia.com/product_images/bc-full/2019/7/6432195/black-galaxy-granite-tile-1564475933-5022444.jpeg')">
+               
+                <h3> Granite #1</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="types" id="types2">
+                <img src="https://www.mizbuilders.com/wp-content/uploads/2021/06/baltic-2.jpg" alt="Image 1" onclick="showImage('https://www.mizbuilders.com/wp-content/uploads/2021/06/baltic-2.jpg')">
+                <h3> Granite #2</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="marbles" id="marbles1">
+                <img src="https://www.faisalgranites.com/wp-content/uploads/2023/02/tan-brown.jpeg" alt="Image 1" onclick="showImage('https://www.faisalgranites.com/wp-content/uploads/2023/02/tan-brown.jpeg')">
+                <h3>Granite #3</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+
+
+            <div class="types" id="types2">
+
+                <img
+                    src="https://www.faisalgranites.com/wp-content/uploads/2023/02/emerald-pearl.jpg"alt="Image 1" onclick="showImage('https://www.faisalgranites.com/wp-content/uploads/2023/02/emerald-pearl.jpg')">
+                <h3>Granite #4</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+        </div>
+        <div class="main-container container2">
+            <div class="tavera" id="tavera1">
+                <img src="https://www.faisalgranites.com/wp-content/uploads/2023/01/Cherry-Pink-800x800.png" alt="Image 1" onclick="showImage('https://www.faisalgranites.com/wp-content/uploads/2023/01/Cherry-Pink-800x800.png')" >
+                <h3>Granite #5 </h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+
+            <div class="tavera" id="tavera2">
+                <img src="https://tiimg.tistatic.com/fp/1/581/black-phu-yen-granite-593.jpg" alt="Image 1" onclick="showImage('https://tiimg.tistatic.com/fp/1/581/black-phu-yen-granite-593.jpg')">
+                <h3> Granite #6</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+
+            <div class="tavera" id="tavera2">
+                <img src="https://www.stsstone.com.au/wp-content/uploads/2021/05/snow-white-antique.jpg" alt="Image 1" onclick="showImage('https://www.stsstone.com.au/wp-content/uploads/2021/05/snow-white-antique.jpg')">
+                <h3>Granite #7</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="tavera" id="tavera2">
+                <img src="b12.jpg" alt="Image 1" onclick="showImage('b12.jpg')">
+                <h3>Granite #8</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+        </div>
+        <!-- <h2 class="head2 head3" id="head56"> Imported Granites</h2> -->
+        <!-- <hr class="hori"> -->
+        <div class="main-container container3" >
+            <div class="badal" id="badal1">
+                <img src="https://www.faisalgranites.com/wp-content/uploads/2023/01/Indus-Gold-800x800.png"  alt="Image 1" onclick="showImage('https://www.faisalgranites.com/wp-content/uploads/2023/01/Indus-Gold-800x800.png')">
+                <h3> Granite #9</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="badal" id="badal2">
+                <img
+                    src="https://3.imimg.com/data3/KR/LG/MY-9230005/black-galaxy-500x500.jpg" alt="Image 1" onclick="showImage('https://3.imimg.com/data3/KR/LG/MY-9230005/black-galaxy-500x500.jpg') ">
+                <h3>Granite #10</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="badal" id="badal3">
+                <img
+                    src="c1.jpg" alt="Image 1" onclick="showImage('c1.jpg')">
+                <h3>Granite #11</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="badal" id="badal3">
+                <img src=" https://www.faisalgranites.com/wp-content/uploads/2023/01/tropical-grey-750.jpg" alt="Image 1" onclick="showImage ('https://www.faisalgranites.com/wp-content/uploads/2023/01/tropical-grey-750.jpg')">
+                <h3>Granite #12</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+        </div>
+        <div class="main-container container4">
+            <div class="galaxy" id="galaxy1">
+                <img src="https://5.imimg.com/data5/CC/GR/VC/GLADMIN-18189518/48-500x500.jpg" alt="Image 1" onclick="showImage('https://5.imimg.com/data5/CC/GR/VC/GLADMIN-18189518/48-500x500.jpg')">
+                <h3>Granite #13</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>
+            <div class="galaxy" id="galaxy2">
+                <img src="https://img3.exportersindia.com/product_images/bc-full/2020/5/7300588/star-white-granite-1589872637-5439848.jpeg" alt="Image 1" onclick="showImage('https://img3.exportersindia.com/product_images/bc-full/2020/5/7300588/star-white-granite-1589872637-5439848.jpeg')">
+                <h3> Granite #14</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>          
+            <div class="galaxy" id="galaxy1">
+                <img src="https://www.faisalgranites.com/wp-content/uploads/2023/01/Badal-800x800.png" alt="Image 1" onclick="showImage('https://www.faisalgranites.com/wp-content/uploads/2023/01/Badal-800x800.png')">
+                <h3>Granite #15</h3>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeImageModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+            </div>  
+            <!-- <div class="main-container container6"> -->
+                <div class="marbles" id="marbles1">
+                    <img src="https://www.shutterstock.com/image-photo/texture-green-marble-natural-stone-600nw-1539899138.jpg"  alt="Image 1" onclick="showImage('https://www.shutterstock.com/image-photo/texture-green-marble-natural-stone-600nw-1539899138.jpg')" >
+                    <h3>Granite #16</h3>
+                    <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeImageModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+                </div>
+        </div>
+        
+
+        <footer>
+            <div class="main-container footer-container" >
+                <div class="homepage" id="homepage1">
+                    <h1>Ideal Marbles & Granites</h1>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="third.html">About us</a></p>
+                    <p><a href="#contact"> Contact Us</a></p>
+                </div>
+                <div class="homepage" id="homepage2">
+                    <h1>Products</h1>
+                    <p><a href="seven.html">Marbles</a></p>
+                    <p><a href="#head">Granites</a></p>
+                    <p><a href="third.html"> Borders</a></p>
+                    <p><a href="fourth.html"> Stairs</a></p>
+                    <p><a href="fifth.html">Floors</a></p>
+                    <p><a href="sixth.html"> Mosaics</a></p>
+                </div>
+                <div class="homepage" id="contact">
+                    <h1>Contact us</h1>
+                    <p>MEHAR ADEEL</p>
+                    <!-- <p><b>I</b>deal Marbles & Granites Opp Khajuron wala Bagh Millat Road Faisalabad </p> -->
+                    <a class="number" href="https://web.whatsapp.com/">0322-8661515<img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2f4vWNEdpsXDov-o-KM2UFXvfBF9IIQ1zA&usqp=CAU"></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const imagePaths = [
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGH0fSvhwFNP_lUUq7EumbZE5HpNR9fqRNcw&usqp=CAU',
+            'https://www.igscountertops.com/wp-content/uploads/2017/11/9728346250_4bd383b11d_b_Black-Galaxy-Granite.jpg',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/01/Brown-Pearl-800x800.png',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/01/Camel-Brown-800x800.png',
+            'https://pic.stonecontact.com/picture/20119/65375/cherry-brown-granite-slabs-india-brown-granite-tiles-p138836-1b.jpg',
+            'https://www.mizbuilders.com/wp-content/uploads/2021/04/cherry-pink-1.jpg',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/01/Cobra-800x800.png',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/01/Fresco-Green.jpg',
+            'https://hghgranite.b-cdn.net/wp-content/uploads/2022/07/Stanstead-Grey.jpg',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/01/Indus-Gold-800x800.png',
+            'https://pic.stonecontact.com/picture201511/20213/20213/product/153222/ibex-indus-red-granite-p866561-4b.jpg',
+            'https://sagesurfaces.com/cdn/shop/products/4931_White_Juparana_925b79fa-fe33-45ed-b772-09de41518c26_grande.jpg?v=1616445926',
+            ' https://www.faisalgranites.com/wp-content/uploads/2023/01/tropical-grey-750.jpg',
+            'https://www.regattaexports.com/wp-content/uploads/2015/11/Lavender-Blue.jpg',
+            'https://4.imimg.com/data4/RL/HF/MY-23738131/lavender-grey-granite-500x500.jpg',
+            'https://pic.stonecontact.com/picture/natural-stone/gris-perla-blanco-tile-12478-1B.jpg',
+            'https://stonedepot.ph/wp-content/uploads/2021/07/Paradiso-Light-Granite.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_TeMXu8u3Bl0sVhnTLqCynzINfQJE5n_Dg&usqp=CAU',
+            'https://academy-marble.com/wp-content/uploads/Snow-White-Marble.jpeg',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/01/Sunny-White.jpg',
+             'https://www.stoneadd.com/photo/upload/marketing/Green-Crystal-MarbleJPG20187517147.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7j4cqJrhCpkjXlfDh2_29BmVP6mjX66TwQ&usqp=CAU',
+            'https://i0.wp.com/miladmarble.rocmet.com/wp-content/uploads/2016/02/DarkEmperadorHPthumb.jpg',
+            'https://www.faisalgranites.com/wp-content/uploads/2023/02/carrara-venatino-e1675351415945.jpg',
+            'https:www.faisalgranites.com/wp-content/uploads/2023/02/carrara-gioia-e1675351533365.jpg',
+            'https://www.alkavioexim.com/wp-content/uploads/2022/11/Green-Marble.jpg',
+            'https://s3-eu-west-1.amazonaws.com/specifiedbypro/11203/130954/thumbnails/ivett-reed-ltd_crema-marfil-71_photo_1_crema-20marfil-0.jpg',
+            'https://5.imimg.com/data5/TX/MD/MY-23195496/statuarietto-1024x683-500x500.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKunH_1c_Pp5S-__iVWFNGYkXBejVNAMdVIxpLwJoPwU2_p8luuqZQnfBpYNDi4_G1cQ4&usqp=CAU',
+        ] 
+        function generateGallery() {
+            const gallery = document.getElementById('main-container');
+        
+            imagePaths.forEach((imagePath, index) => {
+                const img = document.createElement('img');
+                img.src = `path/to/thumbs/image${index + 1}-thumb.jpg`; // Assuming thumbnail paths follow a similar pattern
+                img.alt = `Image ${index + 1}`;
+                img.onclick = () => showImage(imagePath);
+                gallery.appendChild(img);
+            });
+        }   
+        function showImage(imagePath) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            
+            modal.style.display = 'block';
+            modal.classList.add('active');
+            modalImage.src = imagePath;
+        }    
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            modal.classList.remove('active');
+        }   
+        // Generate the gallery when the page loads
+        generateGallery();
+        </script>
+</body>
+</html>
