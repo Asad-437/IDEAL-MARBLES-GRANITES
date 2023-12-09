@@ -283,6 +283,51 @@ footer {
     /* margin-top: 30px; */
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    border-radius: 10px;
+    max-height: 80px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal.active .modal-content {
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+#imageModal img{
+width:550px;
+height: 450px;
+}
 .head3 {
     font-size: 24px;
     border: none;
@@ -293,9 +338,10 @@ scroll-behavior: smooth;
 }
 
 /* The responsiveness of header goes here */
+
 @media (max-width:1080px) {
     header .navbar {
-   /* max-width: 1190px; */
+  
    padding: 10px;
         flex-direction: column;
         align-items: center;
@@ -306,21 +352,17 @@ scroll-behavior: smooth;
 }
     header.navbar{
         justify-content: center;
-        /* max-height: 100px; */
+  
     }
-
-
     header .navbar ul {
         flex-wrap: wrap;
-        /* gap: 15px 10px; */
         justify-content: center;
         font-size: 12px;
     }
-
 }
 @media (max-width:938px) {
     header .navbar {
-   /* max-width: 1190px; */
+
    padding: 10px;
         flex-direction: column;
         align-items: center;
@@ -331,17 +373,13 @@ scroll-behavior: smooth;
 }
     header.navbar{
         justify-content: center;
-        /* max-height: 100px; */
     }
-
-
     header .navbar ul {
         flex-wrap: wrap;
         /* gap: 15px 10px; */
         justify-content: center;
         font-size: 12px;
-    }   
-
+    }  
 
 }
 @media (max-width:1200px) {
@@ -561,51 +599,7 @@ scroll-behavior: smooth;
 }
 
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-}
 
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    border-radius: 10px;
-    max-height: 80px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.modal.active {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal.active .modal-content {
-    max-width: 100%;
-    max-height: 90%;
-    border-radius: 10px;
-}
-#imageModal img{
-width:550px;
-height: 450px;
-}
 @media screen and (max-width: 600px) {
             .modal-content {
                max-width: 70%;
@@ -622,11 +616,9 @@ height: 450px;
 }
     header.navbar{
         justify-content: center;
-        /* max-height: 100px; */
     }
     header .navbar ul {
         flex-wrap: wrap;
-        /* gap: 15px 10px; */
         justify-content: center;
         font-size: 12px;
     }
@@ -635,6 +627,7 @@ height: 450px;
 
         .container20{
             display: flex;
+            justify-content: space-evenly;
         }
 
       
@@ -906,6 +899,7 @@ height: 450px;
                 <img class="modal-content" id="modalImage">
             </div>
         </div>  
+      
         </div>
         <footer>
             <div class="main-container footer-container" >
@@ -922,15 +916,12 @@ height: 450px;
                     <p><a href="third.html"> Borders</a></p>
                     <p><a href="fourth.html"> Stairs</a></p>
                     <p><a href="fifth.html">Floors</a></p>
-                    <!-- <p><a href="fourth.html"> Stairs</a></p> -->
-                    <!-- <li><a href="sixth.html">Mosaics</a></li> -->
                     <p><a href="sixth.html"> Mosaics</a></p>
-                    <!-- <p><a href="third.html"> Borders</a></p> -->
                 </div>
                 <div class="homepage" id="contact">
                     <h1>Contact us</h1>
                     <p>MEHAR ADEEL</p>
-                    <!-- <p><b>I</b>deal Marbles & Granites Opp Khajuron wala Bagh Millat Road Faisalabad </p> -->
+              
                     <a class="number" href="https://web.whatsapp.com/">0322-8661515<img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2f4vWNEdpsXDov-o-KM2UFXvfBF9IIQ1zA&usqp=CAU"></a>
                 </div>
